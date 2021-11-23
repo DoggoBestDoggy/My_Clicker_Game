@@ -10,3 +10,5 @@ function money(){
     addGold(x);
     displayGolds();
 }
+
+setInterval(money(), 1000);
