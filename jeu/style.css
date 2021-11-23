@@ -5,3 +5,13 @@ h1{
     text-align: center;
     color: rgb(220,49,237);
 }
+span{
+    color: gold;
+}
+.argent{
+    background-color: rgb(255,231,254);
+    text-align: center;
+    border: 8px solid black;
+    width: 400px;
+    margin:auto;
+}

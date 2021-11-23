@@ -4,7 +4,7 @@ function addGold(x){
     golds=golds+x;
 }
 function displayGolds(){
-    document.getElementById("money").innerHTML = golds; 
+    document.getElementById("money").innerHTML = golds;
 }
 function money(){
     addGold(x);
