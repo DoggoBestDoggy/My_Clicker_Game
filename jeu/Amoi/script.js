@@ -23,8 +23,8 @@ function buyCupcake() {
 
 
         document.getElementById("golds").innerHTML = golds;
-        document.getElementById("cursorcost").innerHTML = cursorCost;
-        document.getElementById("cursors").innerHTML = cursors;
+        document.getElementById("cupcakecost").innerHTML = cupcakeCost;
+        document.getElementById("cupcake").innerHTML = cupcake;
     }
 }
 
@@ -68,19 +68,60 @@ function addGold(x) {
 function displayGolds() {
 
     let inter = setInterval(() => {
-        golds = golds + cupcake;
-        golds = golds + potion;
-        golds = golds + licorne;
+
+        golds += potion + cupcake + licorne;
+
+
         cursorssss = document.getElementById("cupcake").innerHTML = upcupcake;
         cursorsss = document.getElementById("potion").innerHTML = uppotion;
         cursorss = document.getElementById("licorne").innerHTML = uplicorne;
         moneyy = document.getElementById("money").innerHTML = golds;
         console.log(golds);
 
-    }, 1000);
+    }, 100);
 }
 
 function money() {
     addGold(x);
 
 }
+
+function loadGame() {
+
+    var savedGame = JSON.parse(localStorage.getItem("gameSave"));
+    if (typeof savedGame.golds !== "undefined") golds = savedGame.golds;
+    if (typeof savedGame.cupcake !== "undefined") cupcake = savedGame.cupcake;
+    if (typeof savedGame.cupcakeCost !== "undefined") cupcakeCost = savedGame.cupcakeCost;
+    if (typeof savedGame.potion !== "undefined") potion = savedGame.potion;
+    if (typeof savedGame.potionCost !== "undefined") potionCost = savedGame.potionCost;
+    if (typeof savedGame.licorne !== "undefined") licorne = savedGame.licorne;
+    if (typeof savedGame.licorneCost !== "undefined") licorneCost = savedGame.licorneCost;
+}
+
+function saveGame() {
+    var gameSave = {
+        golds: golds,
+        cupcake: cupcake,
+        cupcakeCost: cupcakeCost,
+        potion: potion,
+        potionCost: potionCost,
+        licorne: licorne,
+        licorneCost: licorneCost,
+    };
+    localStorage.setItem("gameSave", JSON.stringify(gameSave));
+}
+
+window.onload = function () {
+    loadGame();
+    displayGolds();
+    document.getElementById("cupcakecost").innerHTML = cupcakeCost;
+    document.getElementById("cupcake").innerHTML = cupcake;
+    document.getElementById("potioncost").innerHTML = potionCost;
+    document.getElementById("potion").innerHTML = potion;
+    document.getElementById("licornecost").innerHTML = licorneCost;
+    document.getElementById("licorne").innerHTML = licorne;
+}
+
+setInterval(function () {
+    saveGame();
+}, 3000);

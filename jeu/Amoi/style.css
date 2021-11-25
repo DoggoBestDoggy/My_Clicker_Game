@@ -1,7 +1,54 @@
 html{
-    background-color: rgb(245,195,247);
+    background-image: url(https://cdn.wallpapersafari.com/28/57/Nmv01e.jpg);
 }
 h1{
     text-align: center;
     color: rgb(220,49,237);
+    clear: left;
+}
+.cute{
+    clear: left;
+    height: 50px;
+    width: 75px;
+    background-image: url(https://m.media-amazon.com/images/I/4141ztFVb3L._SS500_.jpg);
+    background-size: 50px 75px;
+}
+.buy{
+    width: 200px;
+    height: 25px;
+    margin: 0 0 125;
+}
+.pm{
+    background-color: rgb(255,231,254);
+    border: 5px ridge rgb(255,102,211);
+    width: 400px;
+    margin: auto;
+    text-align:center;
+}
+span{
+    color:rgb(207, 181, 35);
+}
+.ene{
+    border: 5px ridge rgb(255,102,211);
+    height: 400px;
+    width: 300px;
+    float: left;
+    transition-delay: 1s;
+}
+.ene hover{
+    height: 420px;
+    width: 300px;
+}
+.up{
+    background-image: url(https://cdnb.artstation.com/p/assets/images/images/020/569/907/medium/mariel-dz-uwu.jpg?1568289757);
+    background-size: 300px 400px;
+    text-align: center;
+    border: 5px ridge rgb(255,102,211);
+    height: 400px;
+    width: 300px;
+}
+.spark{
+    height: 20px;
+    width: 20px;
+    float: left;
 }
