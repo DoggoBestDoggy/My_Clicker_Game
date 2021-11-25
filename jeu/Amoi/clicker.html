@@ -5,6 +5,8 @@
   <link href="style.css" rel="stylesheet">
   <h1>UwU clicker</h1>
   <script type="text/javascript" src="script.js"></script>
+  <script>displayGolds()</script>
+
 </head>
 
 <body>
@@ -12,8 +14,12 @@
     <h2>UwU golds:<span id="money">0</h2>
   </section>
   <button onclick="money()">UwU</button>
-  <button onclick="buyCursor()">Cursor [<span id="cursorcost">10</span>] -- <span id="cursors">0</span></button>
+
+  <button onclick="buyCupcake()">Cupcake [<span id="cupcakecost">10</span>] -- <span id="cupcake">0</span></button>
+  <button onclick="buyPotion()">Potion [<span id="potioncost">500</span>] -- <span id="potion">0</span></button>
+  <button onclick="buyLicorne()">Licorne [<span id="licornecost">1000</span>] -- <span id="licorne">0</span></button>
+
 </body>
-<script>displayGolds();</script>
+
 
 </html>
