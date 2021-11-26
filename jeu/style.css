@@ -26,19 +26,16 @@ h1{
     text-align:center;
 }
 span{
-    color:gold;
+    color: rgb(234,202,46);
 }
 .ene{
     border: 5px ridge rgb(255,102,211);
     height: 400px;
     width: 300px;
     float: left;
-    transition-delay: 1s;
+    margin: 10 225 0;
 }
-.ene hover{
-    height: 420px;
-    width: 300px;
-}
+
 .up{
     background-image: url(https://cdnb.artstation.com/p/assets/images/images/020/569/907/medium/mariel-dz-uwu.jpg?1568289757);
     background-size: 300px 400px;
@@ -48,7 +45,13 @@ span{
     width: 300px;
 }
 .spark{
-    height: 20px;
-    width: 20px;
+    height: 60px;
+    width: 550px;
     float: left;
+}
+
+.titre{
+    display: flex;
+    text-align: center;
+    border: 5px hidden black;
 }
