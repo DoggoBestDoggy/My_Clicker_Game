@@ -13,6 +13,8 @@ var uplicorne = 0
 var licorneCost = 1000
 var licorne = 0
 
+var UWU = document.getElementById("myAudio");
+
 function buyCupcake() {
     if (golds >= cupcakeCost) {
         golds = golds - cupcakeCost;
@@ -83,8 +85,15 @@ function displayGolds() {
 
 function money() {
     addGold(x);
-
 }
+
+function playAudio() {
+    addGold(x);
+    var bruit = new Audio();
+    bruit.src = "uwu.mp3";
+    bruit.play();
+}
+
 
 function loadGame() {
 
