@@ -11,7 +11,7 @@ h1{
     height: 50px;
     width: 75px;
     background-image: url(https://m.media-amazon.com/images/I/4141ztFVb3L._SS500_.jpg);
-    background-size: 50px 75px;
+    background-size: 75px 50px;
 }
 .buy{
     width: 200px;
